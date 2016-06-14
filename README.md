@@ -216,7 +216,7 @@ Description
 
 在 Nginx worker 进程中加载 Lua 模块，坚持小内存的使用，即使在重负载下依然如此。
 
-该模块是 Nginx 的 HTTP 子系统插件，所以它只能与兼容的二进制文件必须是下面这样生成的 HTTP 环境的下游进行对话（例如：HTTP 0.9/1.0/1.1/2.0, WebSockets等）。
+该模块是 Nginx 的 HTTP 子系统插件，所以它只能与 HTTP 环境的下游进行对话（例如：HTTP 0.9/1.0/1.1/2.0, WebSockets等）。
 
 如果你想获得通用的 TCP 下游客户端对话能力，这时应使用 [ngx_stream_lua](https://github.com/openresty/stream-lua-nginx-module#readme) 模块，同样它也是兼容 Lua API 的。
 
